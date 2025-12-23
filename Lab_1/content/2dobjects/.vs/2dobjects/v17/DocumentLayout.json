@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\My Courses\\CSE 4208\\2k20\\Lab_1\\2dobjects\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{844692F5-EA56-4957-B634-93365B8E98B1}|2dobjects\\2dobjects.vcxproj|E:\\My Courses\\CSE 4208\\2k20\\Lab_1\\codes\\2D_Transformation_and_OpenGL_Primitives.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "2D_Transformation_and_OpenGL_Primitives.cpp",
+              "DocumentMoniker": "E:\\My Courses\\CSE 4208\\2k20\\Lab_1\\codes\\2D_Transformation_and_OpenGL_Primitives.cpp",
+              "RelativeDocumentMoniker": "..\\codes\\2D_Transformation_and_OpenGL_Primitives.cpp",
+              "ToolTip": "E:\\My Courses\\CSE 4208\\2k20\\Lab_1\\codes\\2D_Transformation_and_OpenGL_Primitives.cpp",
+              "RelativeToolTip": "..\\codes\\2D_Transformation_and_OpenGL_Primitives.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-17T02:54:59.842Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
