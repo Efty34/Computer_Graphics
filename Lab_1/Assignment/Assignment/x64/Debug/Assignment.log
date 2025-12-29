@@ -1,0 +1,9 @@
+﻿  Main.cpp
+H:\4-2_Labs\Computer_Graphics\Lab_1\Assignment\Main.cpp(51,35): warning C4101: 'e': unreferenced local variable
+H:\4-2_Labs\Computer_Graphics\Lab_1\Assignment\Main.cpp(241,62): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_1\Assignment\Main.cpp(251,60): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_1\Assignment\Main.cpp(258,59): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_1\Assignment\Main.cpp(269,63): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_1\Assignment\Main.cpp(273,62): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_1\Assignment\Main.cpp(278,57): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Assignment.vcxproj -> H:\4-2_Labs\Computer_Graphics\Lab_1\Assignment\x64\Debug\Assignment.exe
