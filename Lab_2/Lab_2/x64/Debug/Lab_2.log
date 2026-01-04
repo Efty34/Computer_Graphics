@@ -1,0 +1,40 @@
+﻿  glad.c
+  main.cpp
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(353,21): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(354,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(359,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(360,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(365,21): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(366,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(371,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(372,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(377,74): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(378,74): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(379,74): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(380,74): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(383,70): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(384,70): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(385,70): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(388,70): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(389,70): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(392,70): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(393,70): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(395,70): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(412,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(417,21): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(422,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(427,21): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(432,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(437,21): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(442,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(447,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(452,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(457,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(462,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(467,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(529,77): warning C4101: 'scaleMatrix': unreferenced local variable
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(545,89): warning C4305: 'argument': truncation from 'double' to 'float'
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(545,84): warning C4305: 'argument': truncation from 'double' to 'float'
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(546,89): warning C4305: 'argument': truncation from 'double' to 'float'
+H:\4-2_Labs\Computer_Graphics\Lab_2\main.cpp(546,77): warning C4305: 'argument': truncation from 'double' to 'float'
+  Lab_2.vcxproj -> H:\4-2_Labs\Computer_Graphics\Lab_2\x64\Debug\Lab_2.exe
