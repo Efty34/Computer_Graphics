@@ -1,0 +1,10 @@
+﻿  main.cpp
+H:\4-2_Labs\Computer_Graphics\Labtest\3D\Cylinder.h(52,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+H:\4-2_Labs\Computer_Graphics\Labtest\3D\Cylinder.h(100,34): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+H:\4-2_Labs\Computer_Graphics\Labtest\3D\main.cpp(126,54): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+H:\4-2_Labs\Computer_Graphics\Labtest\3D\main.cpp(136,54): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  3D.vcxproj -> H:\4-2_Labs\Computer_Graphics\Labtest\3D\x64\Debug\3D.exe
