@@ -1,0 +1,11 @@
+﻿  main.cpp
+H:\4-2_Labs\Computer_Graphics\demo\Cylinder.h(72,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+H:\4-2_Labs\Computer_Graphics\demo\Cylinder.h(76,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+H:\4-2_Labs\Computer_Graphics\demo\Hexagon.h(107,34): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+  demo.vcxproj -> H:\4-2_Labs\Computer_Graphics\demo\x64\Debug\demo.exe
