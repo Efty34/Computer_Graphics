@@ -148,6 +148,7 @@
     <ClInclude Include="Cube.h" />
     <ClInclude Include="Lamp.h" />
     <ClInclude Include="Monitor.h" />
+    <ClInclude Include="PointLight.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="Table.h" />
     <ClInclude Include="Window.h" />

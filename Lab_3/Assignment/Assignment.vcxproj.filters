@@ -53,6 +53,9 @@
     <ClInclude Include="Window.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="fragmentShader.fs">

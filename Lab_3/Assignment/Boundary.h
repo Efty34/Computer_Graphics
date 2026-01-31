@@ -24,8 +24,8 @@ public:
         roomDepth = 10.0f;
         roomHeight = 4.0f;
         wallThickness = 0.1f;
-        wallColor = glm::vec3(0.7f, 0.8f, 0.9f); // Light blue-gray for walls
-        floorColor = glm::vec3(0.5f, 0.5f, 0.5f); // Gray for floor
+        wallColor = glm::vec3(0.65f, 0.67f, 0.68f); // Concrete gray for walls
+        floorColor = glm::vec3(0.55f, 0.35f, 0.2f); // Warm brown wooden floor
     }
 
     // Constructor with custom dimensions and colors

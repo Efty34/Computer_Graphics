@@ -33,13 +33,13 @@ public:
         glm::mat4 rZ = glm::rotate(rY, glm::radians(rz), glm::vec3(0.0f, 0.0f, 1.0f));
         glm::mat4 m = glm::scale(rZ, glm::vec3(sx, sy, sz));
 
-        // Center the cube so scaling/rotation happens around the center
-        // Original vertices are 0.0 to 0.5. We translate by -0.25 to center it at 0,0,0
-        // But for walls/floors, corner pivot is often easier. I will keep your original corner pivot (0,0,0) logic
-        // and just pass the model matrix.
-
         shader.setMat4("model", m);
-        shader.setVec3("customColor", colorVec); // We will add this uniform to shader
+        
+        // Set material properties based on color
+        shader.setVec3("material.ambient", colorVec * 0.3f);
+        shader.setVec3("material.diffuse", colorVec);
+        shader.setVec3("material.specular", glm::vec3(0.3f, 0.3f, 0.3f));
+        shader.setFloat("material.shininess", 32.0f);
 
         glBindVertexArray(cubeVAO);
         glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
@@ -50,19 +50,61 @@ private:
     unsigned int cubeVAO, cubeVBO, cubeEBO;
 
     void setUpCube() {
-        // Standard Unit Cube Vertices (Pos only, we handle color via Uniform now for flexibility)
+        // Cube vertices with positions and normals
+        // Each face has 4 vertices with the same normal
         float vertices[] = {
-            0.0f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f,  1.0f, 1.0f, 0.0f,  0.0f, 1.0f, 0.0f,
-            0.0f, 0.0f, 1.0f,  1.0f, 0.0f, 1.0f,  1.0f, 1.0f, 1.0f,  0.0f, 1.0f, 1.0f
+            // Position          // Normal
+            // Front face (z = 0, normal pointing -Z)
+            0.0f, 0.0f, 0.0f,    0.0f,  0.0f, -1.0f,
+            1.0f, 0.0f, 0.0f,    0.0f,  0.0f, -1.0f,
+            1.0f, 1.0f, 0.0f,    0.0f,  0.0f, -1.0f,
+            0.0f, 1.0f, 0.0f,    0.0f,  0.0f, -1.0f,
+            
+            // Back face (z = 1, normal pointing +Z)
+            0.0f, 0.0f, 1.0f,    0.0f,  0.0f,  1.0f,
+            1.0f, 0.0f, 1.0f,    0.0f,  0.0f,  1.0f,
+            1.0f, 1.0f, 1.0f,    0.0f,  0.0f,  1.0f,
+            0.0f, 1.0f, 1.0f,    0.0f,  0.0f,  1.0f,
+            
+            // Bottom face (y = 0, normal pointing -Y)
+            0.0f, 0.0f, 0.0f,    0.0f, -1.0f,  0.0f,
+            1.0f, 0.0f, 0.0f,    0.0f, -1.0f,  0.0f,
+            1.0f, 0.0f, 1.0f,    0.0f, -1.0f,  0.0f,
+            0.0f, 0.0f, 1.0f,    0.0f, -1.0f,  0.0f,
+            
+            // Top face (y = 1, normal pointing +Y)
+            0.0f, 1.0f, 0.0f,    0.0f,  1.0f,  0.0f,
+            1.0f, 1.0f, 0.0f,    0.0f,  1.0f,  0.0f,
+            1.0f, 1.0f, 1.0f,    0.0f,  1.0f,  0.0f,
+            0.0f, 1.0f, 1.0f,    0.0f,  1.0f,  0.0f,
+            
+            // Left face (x = 0, normal pointing -X)
+            0.0f, 0.0f, 0.0f,   -1.0f,  0.0f,  0.0f,
+            0.0f, 0.0f, 1.0f,   -1.0f,  0.0f,  0.0f,
+            0.0f, 1.0f, 1.0f,   -1.0f,  0.0f,  0.0f,
+            0.0f, 1.0f, 0.0f,   -1.0f,  0.0f,  0.0f,
+            
+            // Right face (x = 1, normal pointing +X)
+            1.0f, 0.0f, 0.0f,    1.0f,  0.0f,  0.0f,
+            1.0f, 0.0f, 1.0f,    1.0f,  0.0f,  0.0f,
+            1.0f, 1.0f, 1.0f,    1.0f,  0.0f,  0.0f,
+            1.0f, 1.0f, 0.0f,    1.0f,  0.0f,  0.0f,
         };
-        // Reuse indices for a cube
+        
+        // Indices for each face (6 faces * 2 triangles * 3 vertices)
         unsigned int indices[] = {
-            0, 3, 2, 2, 1, 0, // Front
-            4, 5, 6, 6, 7, 4, // Back
-            4, 0, 1, 1, 5, 4, // Bottom
-            3, 7, 6, 6, 2, 3, // Top
-            4, 7, 3, 3, 0, 4, // Left
-            1, 2, 6, 6, 5, 1  // Right
+            // Front face
+            0, 1, 2,  2, 3, 0,
+            // Back face
+            4, 6, 5,  6, 4, 7,
+            // Bottom face
+            8, 9, 10,  10, 11, 8,
+            // Top face
+            12, 14, 13,  14, 12, 15,
+            // Left face
+            16, 17, 18,  18, 19, 16,
+            // Right face
+            20, 22, 21,  22, 20, 23
         };
 
         glGenVertexArrays(1, &cubeVAO);
@@ -75,9 +117,13 @@ private:
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, cubeEBO);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-        // Position attribute
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+        // Position attribute (location = 0)
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
         glEnableVertexAttribArray(0);
+        
+        // Normal attribute (location = 1)
+        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+        glEnableVertexAttribArray(1);
 
         glBindVertexArray(0);
     }

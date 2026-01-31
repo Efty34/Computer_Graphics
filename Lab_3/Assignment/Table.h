@@ -24,7 +24,7 @@ public:
         topDepth = 1.0f;
         legThickness = 0.1f;
         legHeight = 0.8f;
-        color = glm::vec3(0.6f, 0.4f, 0.2f); // wood color
+        color = glm::vec3(0.55f, 0.35f, 0.18f); // Warm oak wood color
     }
 
     // constructor with custom dimensions

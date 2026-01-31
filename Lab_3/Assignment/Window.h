@@ -24,8 +24,8 @@ public:
         windowHeight = 1.5f;
         frameThickness = 0.1f;
         glassThickness = 0.05f;
-        frameColor = glm::vec3(0.3f, 0.25f, 0.2f); // Dark brown frame
-        glassColor = glm::vec3(0.6f, 0.8f, 0.9f);  // Light blue glass
+        frameColor = glm::vec3(0.4f, 0.25f, 0.12f);  // Warm walnut frame
+        glassColor = glm::vec3(0.75f, 0.85f, 0.92f); // Clear sky blue glass
     }
 
     // Constructor with custom dimensions and colors

@@ -28,9 +28,9 @@ public:
         shadeWidth = 0.5f;
         shadeHeight = 0.3f;
         shadeDepth = 0.5f;
-        mountingColor = glm::vec3(0.2f, 0.2f, 0.2f);
-        rodColor = glm::vec3(0.3f, 0.3f, 0.3f);
-        shadeColor = glm::vec3(1.0f, 0.9f, 0.7f);
+        mountingColor = glm::vec3(0.25f, 0.25f, 0.28f);  // Brushed dark metal
+        rodColor = glm::vec3(0.45f, 0.45f, 0.5f);        // Chrome/silver rod
+        shadeColor = glm::vec3(0.95f, 0.9f, 0.75f);      // Warm ivory shade
     }
 
     Lamp(float plateSize, float rod, float shadeW, float shadeH,

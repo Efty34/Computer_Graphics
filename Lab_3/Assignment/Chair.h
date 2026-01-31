@@ -29,7 +29,7 @@ public:
         backrestHeight = 0.5f;
         backrestThickness = 0.05f;
         legThickness = 0.05f;
-        color = glm::vec3(0.4f, 0.3f, 0.2f); // Dark brown wood color
+        color = glm::vec3(0.45f, 0.28f, 0.15f); // Warm walnut wood color
     }
 
     // Constructor with custom dimensions and color
